@@ -1,0 +1,203 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+  text-decoration: none;
+}
+
+ul,ol {
+	list-style: none;
+}
+
+.title--h1 {
+	font-size: 30px;
+}
+
+.item a {
+	margin-left: 10px;
+}
+
+.user-main {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.user-main__top {
+	margin-bottom: 30px;
+}
+
+.user-main__create {
+	float: right;
+}
+
+.user-main__create .create,.user-main__reach a {
+	display: inline-block;
+	border: 1px solid #eee;
+	line-height: 40px;
+	padding: 0 20px;
+	background: #fff;
+	color: #00B7FF;
+	font-size: 12px;
+}
+
+.user-main__create .create:hover {
+	cursor: pointer;
+}
+
+.item__unit {
+	display: inline-block;
+	width: 100px;
+	height: 50px;
+	line-height: 50px;
+}
+
+.user-table {
+	width: 100%;
+	border: 1px solid #f4f4f4;
+    border-right: 0;
+    border-bottom: 0;
+}
+
+.user-row th {
+	height: 60px;
+	border-right: 1px solid #f4f4f4;
+	border-bottom: 1px solid #f4f4f4;
+}
+
+.user-row td {
+	text-align: center;
+	height: 60px;
+	border-right: 1px solid #f4f4f4;
+	border-bottom: 1px solid #f4f4f4;
+}
+
+.ly-clearFix:after {
+	display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    font-size: 0;
+    clear: both;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+/*弹出框*/
+.popupbox {
+	position: fixed;
+	top: 100px;
+	left: 50%;
+	width: 500px;
+	transform: translateX(-50%);
+	z-index: 1000;
+	border-radius: 5px;
+	background: #fff;
+}
+
+.popupbox__top {
+	margin-bottom: 20px;
+	padding: 20px;
+	border-bottom: 1px #eee solid;
+}
+
+.popupbox__close {
+	display: inline-block;
+	padding: 0 8px;
+	font-size: 16px;
+	float: right;
+	color: #999;
+}
+
+.popupbox__close:hover {
+	cursor: pointer;
+}
+
+.popupbox__title {
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.popupbox__main {
+
+}
+
+.popupbox__form {
+	width: 400px;
+	margin: 0 auto;
+}
+
+.popupbox__form input {
+	width: 300px;
+	height: 20px;
+	padding: 6px 7px;
+}
+
+.popupbox__input {
+	margin-bottom: 20px;
+}
+
+.popupbox__asterisk {
+	color: #f00;
+}
+
+.popupbox__bottom {
+	padding: 20px;
+	text-align: right;
+}
+
+.popupbox__button {
+	display: inline-block;
+	padding: 4px 15px 5px;
+    font-size: 14px;
+    border-radius: 3px;
+    outline: 0;
+    border: none;
+    margin-left: 20px;
+}
+
+.popupbox__concel {
+	color: #666;
+	background: #eee;
+}
+
+.popupbox__confirm {
+	color: #fff;
+	background: #108ee9;
+}
+
+/*遮罩层*/
+.popupbox__mask {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0.5;
+	background: #000;
+}
+
+/*确认删除按钮*/
+.confirmDel {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #f1f1f1;
+	border: 1px #999 solid;
+	border-radius: 4px;
+	text-align: center;
+	padding: 10px 20px;
+}
+
+.confirmDel__text {
+	margin-bottom: 10px;
+}
+
+

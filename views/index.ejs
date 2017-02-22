@@ -1,0 +1,57 @@
+<% include header %>
+    <h1 class="title--h1">用户管理</h1>
+    <div class="user-main">
+    	<div class="user-main__top">
+    		<div class="user-main__create">
+    			<button type="button" class="create J-create">增加</button>
+    		</div>
+    		<div class="user-main__reach">
+    			<a href="/reach">查找</a>
+    		</div>
+    	</div>
+	    <table class="user-table j-userTable">
+	    	<thead>
+		    	<tr class="user-row">
+		    		<th>姓名</th>
+		    		<th>学号</th>
+		    		<th>年龄</th>
+		    		<th>电话</th>
+		    		<th>邮箱</th>
+		    		<th>住址</th>
+		    		<th>操作</th>
+		    	</tr>
+	    	</thead>
+	    	<tbody>
+	    	</tbody>	
+	    </table>
+    </div>
+    <!--新建用户-->
+    <div style="display: none;" class="popupbox J-popupbox">
+    	<div class="popupbox__top ly-clearFix">
+    		<span class="popupbox__close J-popupbox-close">x</span>
+    		<span class="popupbox__title">新建用户</span>
+    	</div>
+    	<div class="popupbox__main">
+    		<form class="popupbox__form">
+    			<div class="popupbox__input"><span class="popupbox__asterisk">*</span>姓名：<input type="text" name="name"></div>
+				<div class="popupbox__input"><span class="popupbox__asterisk">*</span>学号：<input type="text" name="studentId"></div>
+				<div class="popupbox__input"><span class="popupbox__asterisk">*</span>年龄：<input type="text" name="age"></div>
+				<div class="popupbox__input"><span class="popupbox__asterisk">*</span>电话：<input type="text" name="tel"></div>
+				<div class="popupbox__input"><span class="popupbox__asterisk">*</span>邮箱：<input type="text" name="email"></div>
+				<div class="popupbox__input"><span class="popupbox__asterisk">*</span>地址：<input type="text" name="address"></div>
+			</form>
+    	</div>
+    	<div class="popupbox__bottom">
+    		<button type="button" class="popupbox__button popupbox__concel J-concel">取消</button>
+    		<button type="button" class="popupbox__button popupbox__confirm J-confirm">确定</button>
+    		<button type="button" class="popupbox__button popupbox__confirm J-update-confirm">确定</button>
+    	</div>
+    </div>
+    <div class="popupbox__mask J-popupbox-mask" style="display: none;"></div>
+    <!--确认删除按钮-->
+    <div class="confirmDel J-confirmDel" style="display: none;">
+    	<p class="confirmDel__text">确认要删除吗</p>
+    	<button type="button" class="J-del-concel">取消</button>
+    	<button type="button" class="J-del-confirm">确定</button>
+    </div>
+<% include footer %>
